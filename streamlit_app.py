@@ -21,12 +21,18 @@ if gemini_api_key:
         st.error(f"An error occurred while setting up the Gemini model: {e}")
 
 
+
 # Display previous chat history using st.chat_message (if available)
 for role, message in st.session_state.chat_history:
     st.chat_message(role).markdown(message)
+
 
 # Capture user input and generate bot response
 if user_input := st.chat_input("Type your message here..."):
     # Store and display user message
     st.session_state.chat_history.append(("user", user_input))
     st.chat_message("user").markdown(user_input)
+
+    
+    st.session_state.chat_history.append(("assistant", bot_response))
+    st.chat_message("assistant").markdown(bot_response)
