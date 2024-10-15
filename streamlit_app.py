@@ -41,18 +41,3 @@ if user_input := st.chat_input("Type your message here..."):
         except Exception as e:
             st.error(f"An error occurred while generating the response: {e}")
 
-# กำหนด URL ของภาพพื้นหลัง
-background_image_url = '/workspaces/NTP-Chatbot/aa.jpg'
-
-# ใส่ CSS เพื่อปรับแต่งพื้นหลัง
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url('{background_image_url}') no-repeat center center fixed;
-        background-size: cover;
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
