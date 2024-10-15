@@ -42,7 +42,7 @@ if user_input := st.chat_input("Type your message here..."):
             st.error(f"An error occurred while generating the response: {e}")
 
 # กำหนด URL ของภาพพื้นหลัง
-background_image_url = 'vscode-remote://codespaces%2Bobscure-waddle-x5vppqg5wjqp3v455/workspaces/NTP-Chatbot/aa.jpg'
+background_image_url = '/workspaces/NTP-Chatbot/aa.jpg'
 
 # ใส่ CSS เพื่อปรับแต่งพื้นหลัง
 st.markdown(
