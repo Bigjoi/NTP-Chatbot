@@ -4,7 +4,7 @@ import google.generativeai as genai
 st.title("🤖 NTP Chatbot")
 st.subheader("🍺 Work Money Happy > Family 🍺")
 # Capture Gemini API Key
-gemini_api_key = st.text_input("Gemini API Key: ", placeholder="Type your API Key here...", type="AIzaSyCQjFEmN3OI9CBI1gzLLO0VH04gGYQfptQ")
+gemini_api_key = st.text_input("Gemini API Key: ", placeholder="Type your API Key here...", type="password")
 # Initialize the Gemini Model
 if gemini_api_key:
     try:
